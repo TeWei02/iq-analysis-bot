@@ -320,6 +320,17 @@ footer{max-width:var(--maxw);margin:0 auto;padding:8px 18px 30px;text-align:cent
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.94)}}
 
 </style>
+<link rel="icon" type="image/svg+xml" href="./icons/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<link rel="manifest" href="./manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="IQ 分析 Bot">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IQ 分析 Bot v3.0 ｜ 線上智力測驗">
+<meta property="og:description" content="48 題分層隨機題庫、難度與速度加權的 IQ 估算。純前端、可離線使用。">
+<meta name="twitter:card" content="summary">
 </head>
 <body>
 <div class="bg-glow"><i></i><i></i><i></i></div>
@@ -1014,6 +1025,16 @@ function downloadJSON(){
   });
 })();
 
+</script>
+<script>
+/* PWA：註冊 Service Worker，讓測驗可離線使用 */
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("./sw.js").catch(function (e) {
+      console.warn("Service worker registration failed:", e);
+    });
+  });
+}
 </script>
 </body>
 </html>
