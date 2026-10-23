@@ -1,5 +1,7 @@
 # IQ 分析 Bot
 
+**Language:** [![中文](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-%E4%B8%AD%E6%96%87%E7%89%88-blue?style=flat-square)](README.md) [![English](https://img.shields.io/badge/English-English-blue?style=flat-square)](README.en.md)
+
 [![Live](https://img.shields.io/badge/Live-tewei02.github.io%2Fiq--analysis--bot-6ea8fe?logo=github)](https://tewei02.github.io/iq-analysis-bot/)
 [![Web](https://img.shields.io/badge/Web-HTML%2FCSS%2FJS-%23E34F26?logo=html5)](https://tewei02.github.io/iq-analysis-bot/)
 [![PWA](https://img.shields.io/badge/PWA-installable-5A0FC8)](https://web.dev/progressive-web-apps/)
